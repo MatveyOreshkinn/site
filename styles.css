@@ -1,0 +1,426 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300;400;500;600;700&display=swap');
+
+.hero-header-bg {
+    background: url('photos/header.png') center/cover;
+    height: 600px;
+    position: relative;
+}
+
+
+.header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header nav {
+    width: 100%;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header span {
+    color: white;
+    font-size: 2.2rem; 
+    font-weight: 700;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem; 
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+
+.hero {
+    position: absolute;
+    top: 65%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+
+.about-bg {
+    background: #e3e0dd;
+    padding: 100px 40px;
+    position: relative;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-content {
+    background: white;
+    padding: 60px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000000;
+    position: relative;
+}
+
+#about h2 {
+    color: #000000;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+    position: relative;
+}
+
+#about h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #e74c3c;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+}
+
+
+#menu {
+    padding: 80px 40px;
+    background: url('photos/menu_background.png') center/cover;
+    position: relative;
+    color: white;
+}
+
+
+#menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#menu h2,
+#menu .menu-category,
+#menu h3,
+#menu ul,
+#menu li {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+#menu h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.menu-category {
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.menu-category h3 {
+    color: #e74c3c;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-category li {
+    padding: 12px 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.menu-category li:last-child {
+    border-bottom: none;
+}
+
+
+#advantages {
+    background: #e3e0dd; 
+    padding: 80px 40px;
+    color: #000000; 
+}
+
+#advantages h2 {
+    color: #000000; 
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#advantages ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#advantages li {
+    padding: 25px 20px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-left: 70px;
+}
+
+#advantages li::before {
+    content: "✓";
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+#booking {
+    padding: 80px 40px;
+    background: url('photos/cta_background.png') center/cover;
+    position: relative;
+    color: white;
+}
+
+#booking::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#booking h2,
+#booking form,
+#booking label {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+#booking h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+form button {
+    width: 100%;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+
+footer {
+    background: #000000;
+    color: white;
+    padding: 50px 40px;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+}
+
+
+footer > div::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 80%;
+    background: white;
+    opacity: 0.3;
+}
+
+footer h3 {
+    color: #e74c3c;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+footer a:hover {
+    color: #e74c3c;
+}
+
+
+footer > div > div {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+
+footer > div > div:first-child p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+h2 {
+    color: #000000;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}

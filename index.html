@@ -1,122 +1,190 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Усадьба Орешкина</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Шапка и герой-секция -->
     <div class="hero-header-bg">
         <header class="header">
-            <nav>
-                <div>
-                    <span>Усадьба Орешкина</span>
-                    <a href="#about">О нас</a>
-                    <a href="#menu">Меню</a>
-                    <a href="#advantages">Достижения</a>
-                    <a href="#booking">Забронировать столик</a>
-                </div>  
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container position-relative">
+                    <span class="navbar-brand">Усадьба Орешкина</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#menu">Меню</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#advantages">Достижения</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#booking">Забронировать столик</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
 
         <section class="hero">
-            <h1>Кашу маслом не испортишь, 
-                а скидкой 20% для именинников — сделаешь вкуснее!</h1>
-            <button>Забронировать столик</button>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <h1 class="text-center">Кашу маслом не испортишь, а скидкой 20% для именинников — сделаешь вкуснее!</h1>
+                        <div class="text-center">
+                            <button class="btn btn-primary">Забронировать столик</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
-<section class="about-bg" id="about">
-    <div class="about-container">
-        <h2>О нас</h2>
-        <div class="about-content">
-            <p>Усадьба Орешкина — благодатное место для семейных трапез да радушных бесед. 
-                Возлежи у нас в хоромах, да обрящешь покой душевный да утеху сердцу. 
-                Повара наши, что искусные иконописцы, пишут яства по заветам прадедов: 
-                борщ царский на меду томленый, расстегаи со стерлядью, гусь печеный 
-                с яблоками да кашей гречневой, блины во всю сковороду — с маслицем, 
-                со сметанкой, с икоркой зернистой.</p>
+    <!-- Остальной код без изменений -->
+    <!-- О нас -->
+    <section class="about-bg" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <h2 class="text-center">О нас</h2>
+                    <div class="about-content">
+                        <p class="text-center">Усадьба Орешкина — благодатное место для семейных трапез да радушных бесед. 
+                            Возлежи у нас в хоромах, да обрящешь покой душевный да утеху сердцу. 
+                            Повара наши, что искусные иконописцы, пишут яства по заветам прадедов: 
+                            борщ царский на меду томленый, расстегаи со стерлядью, гусь печеный 
+                            с яблоками да кашей гречневой, блины во всю сковороду — с маслицем, 
+                            со сметанкой, с икоркой зернистой.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Меню -->
     <section id="menu">
-        <h2>Меню Усадьбы Орешкина</h2>
-        <div class="menu-category">
-            <h3>Похлебки да супы</h3>
-            <ul>
-                <li>Борщ царский с мясом кабана да сметаной — 390р</li>
-                <li>Солянка боярская с тремя мясами да маслинами — 420р</li>
-                <li>Уха стерляжья с расстегаем — 460р</li>
-            </ul>
-        </div>
-        <div class="menu-category">
-            <h3>Основные яства</h3>
-            <ul>
-                <li>Гусь печеный с яблоками да кашей гречневой — 790р</li>
-                <li>Телятина по-боярски с кореньями — 680р</li>
-                <li>Дичь жареная с брусничным взваром — 850р</li>
-            </ul>
-        </div>
-        <div class="menu-category">
-            <h3>Пироги да блины</h3>
-            <ul>
-                <li>Расстегай со стерляжью наливочкой — 290р</li>
-                <li>Пирог кулебяка с капустой да грибами — 320р</li>
-                <li>Блины царские с красной икоркой — 520р</li>
-                <li>Блины с творогом да изюмом — 280р</li>
-            </ul>
+        <div class="container">
+            <h2 class="text-center">Меню Усадьбы Орешкина</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="menu-category">
+                        <h3 class="text-center">Похлебки да супы</h3>
+                        <ul class="list-unstyled">
+                            <li>Борщ царский с мясом кабана да сметаной — 390р</li>
+                            <li>Солянка боярская с тремя мясами да маслинами — 420р</li>
+                            <li>Уха стерляжья с расстегаем — 460р</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="menu-category">
+                        <h3 class="text-center">Основные яства</h3>
+                        <ul class="list-unstyled">
+                            <li>Гусь печеный с яблоками да кашей гречневой — 790р</li>
+                            <li>Телятина по-боярски с кореньями — 680р</li>
+                            <li>Дичь жареная с брусничным взваром — 850р</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="menu-category">
+                        <h3 class="text-center">Пироги да блины</h3>
+                        <ul class="list-unstyled">
+                            <li>Расстегай со стерляжью наливочкой — 290р</li>
+                            <li>Пирог кулебяка с капустой да грибами — 320р</li>
+                            <li>Блины царские с красной икоркой — 520р</li>
+                            <li>Блины с творогом да изюмом — 280р</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Преимущества -->
     <section id="advantages">
-        <h2>Почему стоит трапезничать именно в усадьбе Орешкина?</h2>
-        <ul>
-            <li>Нас выбирают за подлинность — Готовим только на русской печи и дровяной духовке</li>
-            <li>Фермерские продукты — Используем продукты с собственных угодий</li>
-            <li>Всё только свежее — Никаких полуфабрикатов, даже хлеб и квас готовим сами</li>
-        </ul>
+        <div class="container">
+            <h2 class="text-center">Почему стоит трапезничать именно в усадьбе Орешкина?</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <ul class="list-unstyled">
+                        <li>Нас выбирают за подлинность — Готовим только на русской печи и дровяной духовке</li>
+                        <li>Фермерские продукты — Используем продукты с собственных угодий</li>
+                        <li>Всё только свежее — Никаких полуфабрикатов, даже хлеб и квас готовим сами</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Бронирование -->
     <section id="booking">
-        <h2>Забронировать столик</h2>
-        <form>
-            <div>
-                <label for="fullname">ФИО</label>
-                <input type="text" id="fullname" placeholder="Ваше ФИО">
+        <div class="container">
+            <h2 class="text-center">Забронировать столик</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">ФИО</label>
+                            <input type="text" class="form-control" id="fullname" placeholder="Ваше ФИО">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Телефон">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="date" class="form-label">Дата</label>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="time" class="form-label">Время</label>
+                                <input type="time" class="form-control" id="time">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Забронировать</button>
+                    </form>
+                </div>
             </div>
-            <div>
-                <label for="phone">Телефон</label>
-                <input type="tel" id="phone" placeholder="Телефон">
-            </div>
-            <div>
-                <label for="date">Дата</label>
-                <input type="date" id="date">
-            </div>
-            <div>
-                <label for="time">Время</label>
-                <input type="time" id="time">
-            </div>
-            <button type="submit">Забронировать</button>
-        </form>
+        </div>
     </section>
 
-<footer>
-    <div>
-        <div>
-            <h3>Наши контакты</h3>
-            <p>+7 (932) 308 76 06</p>
-            <p><a href="mailto:oreshkinhouse.2025@mail.ru">oreshkinhouse.2025@mail.ru</a></p>
-            <p>
-                <a href="https://vk.com/matveyoreshkin">Вконтакте</a>
-                <a href="https://t.me/jwusuhe">Telegram</a>
-            </p>
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <h3>Наши контакты</h3>
+                    <p>+7 (932) 308 76 06</p>
+                    <p><a href="mailto:oreshkinhouse.2025@mail.ru">oreshkinhouse.2025@mail.ru</a></p>
+                    <p>
+                        <a href="https://vk.com/matveyoreshkin">Вконтакте</a>
+                        <a href="https://t.me/jwusuhe">Telegram</a>
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3>Адрес</h3>
+                    <p>Челябинск</p>
+                    <p>ул. Цвиллинга дом 25</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>Адрес</h3>
-            <p>Челябинск</p>
-            <p>ул. Цвиллинга дом 25</p>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

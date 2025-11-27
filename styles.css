@@ -1,11 +1,9 @@
+/* styles.css */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Pontano Sans', sans-serif;
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300;400;500;600;700&display=swap');
 
 .hero-header-bg {
     background: url('photos/header.png') center/cover;
@@ -13,49 +11,50 @@ body {
     position: relative;
 }
 
-
 .header {
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1000;
 }
 
-.header nav {
-    width: 100%;
-}
-
-.header div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.header span {
-    color: white;
-    font-size: 2.2rem; 
+.navbar-brand {
+    color: white !important;
+    font-size: 2.2rem;
     font-weight: 700;
 }
 
-.header a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem; 
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1.3rem;
     font-weight: 500;
     margin: 0 15px;
 }
 
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    padding: 4px 8px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 1.2em;
+    height: 1.2em;
+}
+
+/* Раскрывающееся меню - справа с прозрачным фоном */
+.navbar-collapse {
+    background: transparent !important;
+}
 
 .hero {
     position: absolute;
-    top: 65%; 
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
     padding: 0 20px;
+    z-index: 1; /* Понижаем z-index чтобы был под меню */
 }
 
 .hero h1 {
@@ -65,28 +64,19 @@ body {
     margin-bottom: 30px;
 }
 
-.hero button {
+.hero .btn-primary {
     background: #e74c3c;
-    color: white;
     border: none;
     padding: 15px 40px;
     font-size: 1.2rem;
     font-weight: 600;
     border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Pontano Sans', sans-serif;
 }
-
 
 .about-bg {
     background: #e3e0dd;
-    padding: 100px 40px;
+    padding: 100px 0;
     position: relative;
-}
-
-.about-container {
-    max-width: 900px;
-    margin: 0 auto;
 }
 
 .about-content {
@@ -126,14 +116,12 @@ body {
     margin: 0;
 }
 
-
 #menu {
-    padding: 80px 40px;
+    padding: 80px 0;
     background: url('photos/menu_background.png') center/cover;
     position: relative;
     color: white;
 }
-
 
 #menu::before {
     content: '';
@@ -163,11 +151,12 @@ body {
 }
 
 .menu-category {
-    margin-bottom: 50px;
+    margin-bottom: 0;
     background: rgba(255, 255, 255, 0.1);
     padding: 25px;
     border-radius: 10px;
     backdrop-filter: blur(5px);
+    height: 100%;
 }
 
 .menu-category h3 {
@@ -193,15 +182,14 @@ body {
     border-bottom: none;
 }
 
-
 #advantages {
-    background: #e3e0dd; 
-    padding: 80px 40px;
-    color: #000000; 
+    background: #e3e0dd;
+    padding: 80px 0;
+    color: #000000;
 }
 
 #advantages h2 {
-    color: #000000; 
+    color: #000000;
     font-size: 2.2rem;
     text-align: center;
     margin-bottom: 30px;
@@ -210,8 +198,6 @@ body {
 #advantages ul {
     list-style: none;
     padding: 0;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 #advantages li {
@@ -243,9 +229,8 @@ body {
     font-weight: bold;
 }
 
-
 #booking {
-    padding: 80px 40px;
+    padding: 80px 0;
     background: url('photos/cta_background.png') center/cover;
     position: relative;
     color: white;
@@ -276,108 +261,23 @@ body {
     color: white;
 }
 
-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-form div {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
+#booking .form-label {
     font-weight: 600;
     color: white;
 }
 
-input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #bdc3c7;
-    border-radius: 5px;
-    font-family: 'Pontano Sans', sans-serif;
-    font-size: 1rem;
-    background: rgba(255, 255, 255, 0.9);
-}
-
-form button {
-    width: 100%;
+#booking .btn-primary {
     background: #e74c3c;
-    color: white;
     border: none;
     padding: 15px;
     font-size: 1.2rem;
     border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Pontano Sans', sans-serif;
 }
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-form div {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #bdc3c7;
-    border-radius: 5px;
-    font-family: 'Pontano Sans', sans-serif;
-    font-size: 1rem;
-}
-
-form button {
-    width: 100%;
-    background: #e74c3c;
-    color: white;
-    border: none;
-    padding: 15px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Pontano Sans', sans-serif;
-}
-
 
 footer {
     background: #000000;
     color: white;
-    padding: 50px 40px;
-}
-
-footer > div {
-    display: flex;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 40px;
-    position: relative;
-}
-
-
-footer > div::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 2px;
-    height: 80%;
-    background: white;
-    opacity: 0.3;
+    padding: 50px 0;
 }
 
 footer h3 {
@@ -404,23 +304,227 @@ footer a:hover {
     color: #e74c3c;
 }
 
-
-footer > div > div {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
+/* Адаптивные стили */
+@media (max-width: 1399.98px) {
+    /* Extra extra large (≥1400px) - стандартные стили */
 }
 
-
-footer > div > div:first-child p:last-child {
-    margin-bottom: 0;
+@media (max-width: 1199.98px) {
+    /* Extra large (≥1200px) */
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;
+    }
 }
 
+@media (max-width: 991.98px) {
+    /* Large (≥992px) */
+    .hero-header-bg {
+        height: 500px;
+    }
+    .hero {
+        top: 60%;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .about-content {
+        padding: 40px 30px;
+    }
+    #advantages li {
+        padding-left: 60px;
+    }
+    #advantages li::before {
+        left: 15px;
+    }
+    
+    /* Бургер меню позиционирование */
+    .navbar-toggler {
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        z-index: 1001;
+    }
+    
+    /* Раскрывающееся меню справа - УБИРАЕМ НАЕЗД НА ТЕКСТ */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: auto;
+        min-width: 200px;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.9) !important; /* Добавляем темный фон для читаемости */
+        border-radius: 0 0 0 10px;
+        padding: 10px 0;
+    }
+    
+    .navbar-nav {
+        text-align: right;
+    }
+    
+    .nav-item {
+        display: block;
+    }
+    
+    .nav-link {
+        text-align: right !important;
+        padding: 12px 25px !important;
+        margin: 0 !important;
+        white-space: nowrap;
+    }
+    
+    /* Сдвигаем основной текст вниз когда меню открыто */
+    .navbar-collapse.show ~ .hero {
+        top: 70%;
+    }
+}
 
+@media (max-width: 767.98px) {
+    /* Medium (≥768px) */
+    .hero-header-bg {
+        height: 450px;
+    }
+    .hero h1 {
+        font-size: 1.6rem;
+        margin-top: 20px;
+    }
+    .navbar-brand {
+        font-size: 1.6rem;
+    }
+    .about-bg, #advantages, #menu, #booking {
+        padding: 60px 0;
+    }
+    .about-content {
+        padding: 30px 20px;
+    }
+    #about h2, #menu h2, #advantages h2, #booking h2 {
+        font-size: 2rem;
+    }
+    .menu-category {
+        padding: 20px 15px;
+    }
+    
+    .navbar-toggler {
+        right: 15px;
+        top: 15px;
+    }
+    
+    /* Уменьшаем высоту шапки чтобы освободить место */
+    .header {
+        padding: 15px 0;
+        min-height: 80px;
+    }
+    
+    .navbar-collapse.show ~ .hero {
+        top: 65%;
+    }
+}
 
-h2 {
-    color: #000000;
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 30px;
+@media (max-width: 575.98px) {
+    /* Small (≥576px) */
+    .hero-header-bg {
+        height: 400px;
+    }
+    .hero h1 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .hero .btn-primary {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+    }
+    .navbar-brand {
+        font-size: 1.4rem;
+        max-width: 70%; /* Ограничиваем ширину логотипа */
+    }
+    .about-bg, #advantages, #menu, #booking {
+        padding: 40px 0;
+    }
+    #about h2, #menu h2, #advantages h2, #booking h2 {
+        font-size: 1.8rem;
+    }
+    #about p, .menu-category li, #advantages li {
+        font-size: 1.1rem;
+    }
+    .about-content {
+        padding: 20px 15px;
+    }
+    
+    .navbar-toggler {
+        right: 15px;
+        top: 12px;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 1.1rem;
+        padding: 10px 20px !important;
+    }
+    
+    .navbar-collapse {
+        min-width: 180px;
+    }
+    
+    /* Еще больше сдвигаем текст когда меню открыто */
+    .navbar-collapse.show ~ .hero {
+        top: 70%;
+    }
+    
+    .hero h1 {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    /* X-Small (<576px) - дополнительные корректировки для очень маленьких экранов */
+    .hero h1 {
+        font-size: 1.2rem;
+        margin-top: 40px;
+    }
+    .navbar-brand {
+        font-size: 1.2rem;
+        max-width: 65%;
+    }
+    #about h2, #menu h2, #advantages h2, #booking h2 {
+        font-size: 1.6rem;
+    }
+    #about p, .menu-category li, #advantages li {
+        font-size: 1rem;
+    }
+    footer h3 {
+        font-size: 1.3rem;
+    }
+    footer p, footer a {
+        font-size: 1rem;
+    }
+    
+    .navbar-toggler {
+        padding: 3px 6px;
+        top: 10px;
+    }
+    
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+    }
+    
+    .navbar-collapse {
+        min-width: 160px;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 8px 15px !important;
+    }
+    
+    /* Максимально сдвигаем текст на очень маленьких экранах */
+    .navbar-collapse.show ~ .hero {
+        top: 75%;
+    }
 }
